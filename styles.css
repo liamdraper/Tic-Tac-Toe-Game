@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Chalkduster", fantasy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#d1d5db .5vmin, transparent 0px);
+    background-size: 100% 4.5vmin;
+    /*background-image: url("https://shots.codepen.io/montanaflynn/pen/DzoOvA-800.jpg?version=1340318262")*/;
+}
+
+header {
+    font-size: 8vmin;
+    letter-spacing: 0.5vmin;
+}
+
+h1 {
+    font-size: 4vmin;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+}
+
+#board > div {
+    border: 2vmin solid black;
+    margin: vmin;
+}
+
+button {
+    font-family: "Monaco", monospace;
+    background-color: lightblue;
+    border: 10vmin black;
+    margin-top: 4vmin;
+    padding: 3vmin;
+    font-size: 3vmin;
+    border-radius: 3vmin;
+}
+
+button:hover {
+    color: white;
+    background-color: grey;
+    ;
+}
+
