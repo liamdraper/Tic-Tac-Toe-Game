@@ -12,7 +12,6 @@ body {
     align-items: center;
     background-image: linear-gradient(#d1d5db .5vmin, transparent 0px);
     background-size: 100% 4.5vmin;
-    /*background-image: url("https://shots.codepen.io/montanaflynn/pen/DzoOvA-800.jpg?version=1340318262")*/;
 }
 
 header {
@@ -21,7 +20,7 @@ header {
 }
 
 h1 {
-    font-size: 4vmin;
+    font-size: 5vmin;
 }
 
 #board {
@@ -33,6 +32,26 @@ h1 {
 #board > div {
     border: 2vmin solid black;
     margin: vmin;
+}
+
+#board #c0, #board #c1, #board #c2 {
+    border-top: none;
+}
+
+#board #c0, #board #c3, #board #c6 {
+    border-left: none;
+}
+
+#board #c6, #board #c7, #board #c8 {
+    border-bottom: none;
+}
+
+#board #c2, #board #c5, #board #c8 {
+    border-right: none;
+}
+
+#board > div:hover {
+    background-color: lightblue;
 }
 
 button {
@@ -49,5 +68,22 @@ button:hover {
     color: white;
     background-color: grey;
     ;
+}
+
+ .x:after {
+    content: "X";
+    text-align: center;
+    font-size: 15vmin;
+}
+
+.o:after {
+    content: "O";
+    text-align: center;
+    font-size: 15vmin; 
+}
+    
+
+.blank {
+   
 }
 
